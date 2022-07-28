@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.layout {  /*전체*/
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+  }
+  .header {  /*My Todo List*/ /*React*/
+    align-items: center; 
+    border: 1px solid #ddd;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .title {   /*제목*/ /*내용*/ /*추가하기*/
+    align-items: center; 
+    border: 1px solid #ddd;
+    display: flex;
+    height: 100px;
+    padding: 0 20px;
+    justify-content: space-between;
+    background-color: bisque;
+  }
+  .title-input {  /*제목란*/ 
+    border-radius: 10px;
+    width: 220px;
+    height: 30px;
+    
+  }
+  .contents-input {  /*내용란*/
+    border-radius: 10px;
+    width: 220px;
+    height: 30px;
+    
+  }
+  .btn {  /*추가하기 버튼*/
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(228, 93, 224);
+    color: white; 
+  }
+  .todo1 {  /*Working 리액트 공부하기*/
+    width: 300px;
+    height: 160px;
+    border: 5px rgb(183, 56, 194) solid;
+    padding : 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+  } 
+  .todo2 {  /*Done 리액트 공부하기*/
+    width: 300px;
+    height: 160px;
+    border: 5px rgb(183, 56, 194) solid;
+    padding : 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+  } 
+  .button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 50%;
+  }
+  .delete-button {
+    background-color: #fff;
+    border: 2px solid red;
+    
+  }
+  .complete-button {
+    background-color: #fff;
+    border: 2px solid green;
+  }
